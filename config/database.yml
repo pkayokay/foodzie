@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+
+
+development:
+  <<: *default
+  database: foodzie_development
+
+test:
+  <<: *default
+  database: foodzie_test
+
+production:
+  <<: *default
+  database: foodzie_production
