@@ -10,13 +10,17 @@
 <body>
 <nav>
   <ul>
-    <li id="brand"><%= link_to 'Foodzie', root_path %></li>
+    <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
+    <% if user_signed_in? %>
+      <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to 'Sign in', new_user_session_path %></li>
+      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+    <% end %>
     <li>Button</li>
   </ul>
 </nav>
-
-  <br>
   <% if notice.present? %>
     <p class="notice"><%= notice %></p>
   <% end %>
@@ -25,6 +29,5 @@
   <% end %>
   <br>
   <%= yield %>
-
 </body>
 </html>

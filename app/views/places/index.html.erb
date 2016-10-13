@@ -1,9 +1,13 @@
-<% @places.each do |place| %>
-  <div>
-    <h1><%= place.name %></h1>
-    <i><%= place.address %></i>
-    <p><%= place.description %></p>
-    <br>
+<div class="center"> 
+  <div class="left"> 
+  <% @places.each do |place| %>
+    <div>
+      <h1><%= place.name %></h1>
+      <i><%= place.address %></i>
+      <p><%= place.description %></p>
+      <br>
+    </div>
+  <% end %>
+  <span style="text-align: center"><%= will_paginate @posts %></span>
   </div>
-<% end %>
-<%= will_paginate @posts %>
+</div>
