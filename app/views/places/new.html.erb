@@ -1,0 +1,8 @@
+<h2>Enter a new place:</h2>
+<%= simple_form_for @place do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <br>
+  <%= f.submit 'Create', class: 'btn' %>
+<% end %>

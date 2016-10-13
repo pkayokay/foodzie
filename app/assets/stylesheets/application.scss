@@ -17,5 +17,46 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  padding: 10px;
+  padding: 20px;
+}
+
+a, a:visited, a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+#brand {
+  color: #777;
+}
+
+ul {
+  margin-left: -40px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.btn {
+  width: 100px;
+}
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input {
+  width: 300px;
+  max-width: 100%;
+}
+
+textarea {
+  @extend input;
+  height: 100px;
 }
