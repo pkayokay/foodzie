@@ -18,16 +18,17 @@
       <li><%= link_to 'Sign in', new_user_session_path %></li>
       <li><%= link_to 'Sign up', new_user_registration_path %></li>
     <% end %>
-    <li>Button</li>
   </ul>
 </nav>
+<div style="padding: 8px">
   <% if notice.present? %>
+  <br>
     <p class="notice"><%= notice %></p>
   <% end %>
   <% if alert.present? %>
     <p class="alert"><%= alert %></p>
   <% end %>
-  <br>
   <%= yield %>
+</div>
 </body>
 </html>

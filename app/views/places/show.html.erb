@@ -1,0 +1,11 @@
+<div class="center">
+  <div class="left">
+
+  <h1><%= @place.name %></h1>
+  <i><%= @place.address %></i>
+  <br/><br/>
+  <p><%= @place.description %></p>
+  <br>
+  <%= link_to 'Edit', edit_place_path(@place), class: 'btn' %>
+  </div>
+</div>
