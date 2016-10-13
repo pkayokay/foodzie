@@ -11,13 +11,20 @@
 <nav>
   <ul>
     <li id="brand"><%= link_to 'Foodzie', root_path %></li>
-    <li>Button</li>
+    <li><%= link_to 'Create', new_place_path %></li>
     <li>Button</li>
   </ul>
 </nav>
-<br>
 
-<%= yield %>
+  <br>
+  <% if notice.present? %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+  <br>
+  <%= yield %>
 
 </body>
 </html>
