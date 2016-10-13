@@ -65,7 +65,7 @@ label {
   display: block;
   margin-top: 12px;
   text-align: left;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 input {
@@ -84,10 +84,12 @@ textarea, textarea:focus {
 }
 .notice {
   color: #0f8cc7;
+  text-align: center;
 }
 
 .alert {
-  color: #fd4545 ;
+  color: #fd4545;
+  text-align: center;
 }
 
 .hint {
