@@ -34,24 +34,64 @@ a:hover {
 
 nav {
   background: #333;
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: right;
 }
+
+.container {
+  padding: 0 130px;
+}
+
 
 ul {
   display: inline-block;
+  padding-right: 130px;
 }
+
+#brand {
+  position: absolute;
+  top: 12px;
+  left: 130px;
+}
+
+span a {
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  color: #fff !important;
+}
+
+
 
 li {
   list-style: none;
   display: inline-block;
-  padding-right: 15px;
+  margin-right: 14px;
 }
+
 li a, li a:visited, li a:focus {
   color: #fff;
   text-decoration: none;
 }
 
+
+@media (max-width:640px) {
+
+  .container {
+    padding: 0 14px;
+  }
+
+  ul {
+    padding-right: 14px;
+  }
+
+  body {
+    font-size: .9em;
+  }
+  #brand {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+  }
+}
 /* forms */
 
 form {
@@ -95,13 +135,11 @@ textarea, textarea:focus {
 .notice {
   color: #0f8cc7;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .alert {
   color: #fd4545;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .hint {

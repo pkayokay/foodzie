@@ -9,8 +9,8 @@
 </head>
 <body>
 <nav>
+    <span id="brand"><%= link_to 'FOODZIE', root_path %></span>
   <ul>
-    <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
     <% if user_signed_in? %>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
@@ -20,14 +20,15 @@
     <% end %>
   </ul>
 </nav>
-<div style="padding: 8px">
+<br>
+<div class="container">
   <% if notice.present? %>
-  <br>
     <p class="notice"><%= notice %></p>
   <% end %>
   <% if alert.present? %>
     <p class="alert"><%= alert %></p>
   <% end %>
+  <br>
   <%= yield %>
 </div>
 </body>
