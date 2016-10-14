@@ -5,9 +5,7 @@
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :description %>
-    <% if @place.defaultpicture.blank? %> 
     <%= f.input :defaultpicture %>
-    <% end %>
     <br>
     <%= f.submit 'Update', class: 'btn block' %>
     <%= link_to 'Cancel', root_path, class: 'btn block' %>
