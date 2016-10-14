@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
 before_action :authenticate_user!, only: [:new, :create]
 
   def index
-    @places = Place.paginate(:page => params[:page], :per_page => 5)
+    @places = Place.all.order("name ASC").paginate(:page => params[:page], :per_page => 5)
   end
 
   def new
