@@ -3,6 +3,10 @@
       <h1><%= link_to place.name, place_path(place) %></h1>
       <i><%= place.address %></i>
       <p><%= place.description %></p>
+        <% if place.defaultpicture.present? %> 
+        <div><%= image_tag place.defaultpicture %>
+        </div>
+        <% end %>
       <% if place.user.present? %>
         <small><%= place.user.email %></small>
       <% end %>

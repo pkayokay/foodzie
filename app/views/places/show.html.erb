@@ -5,6 +5,10 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
+    <% if @place.defaultpicture.present? %> 
+    <div><%= image_tag @place.defaultpicture %>
+    </div>
+    <% end %>
   <br>
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn' %>
