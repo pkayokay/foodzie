@@ -26,6 +26,11 @@ body {
   margin: 0;
 }
 
+#map {
+  width: 100%;
+  max-width: 500;
+  height: 300px;
+}
 a, a:visited, a:focus {
   color: #fff;
   text-decoration: none;
