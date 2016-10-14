@@ -138,7 +138,6 @@ label {
 input {
   width: 300px;
   max-width: 95%;
-  -webkit-appearance: none;
 }
 
 textarea {
@@ -188,6 +187,7 @@ input[type="submit" i]:active,
 }
 input[type="submit" i]:hover {
   opacity: .9;
+  -webkit-appearance: none;
 }
 
 
