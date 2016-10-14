@@ -31,7 +31,7 @@ body {
   max-width: 500;
   height: 300px;
 }
-a, a:visited, a:focus {
+nav a, nav a:visited, nav a:focus {
   color: #fff;
   text-decoration: none;
   transition: all 0.1s ease;
@@ -42,8 +42,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1 a, h1 a:visited, h1 a:focus {
+ a,  a:visited,  a:focus {
   color: #333;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.left a, .left a:visited, .left a:focus {
+  color: #fff;
   text-decoration: none;
   transition: all 0.1s ease;
 }
