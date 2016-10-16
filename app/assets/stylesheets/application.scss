@@ -28,7 +28,7 @@ body {
 
 #map {
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
   height: 300px;
 }
 nav a, nav a:visited, nav a:focus {
@@ -161,6 +161,7 @@ form {
   text-align: left;
   display: inline-block;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 label {
