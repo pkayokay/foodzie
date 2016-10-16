@@ -3,7 +3,7 @@ class Comment < ActiveRecord::Base
   belongs_to :place
   after_create :send_comment_email
   
-  validates :comment,  presence: true, length: { maximum: 100, minimum: 3}
+  validates :comment, presence: true
 
     RATINGS = {
     'One star'    => '1',
