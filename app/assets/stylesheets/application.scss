@@ -57,6 +57,7 @@ a:hover {
 nav {
   background: #333;
   text-align: right;
+  height: 100px;
 }
 
 .container {
@@ -69,7 +70,7 @@ nav {
 }
 ul {
   display: inline-block;
-  padding-right: 130px;
+  padding: 24px 130px 0 0;
 }
 
 #brand {
@@ -106,23 +107,27 @@ li a, li a:visited, li a:focus {
   }
 
   ul {
-    padding-right: 14px;
+    padding: 48px 0 0 0;
   }
 
   body {
     font-size: .9em;
   }
   #brand {
-    position: absolute;
     top: 15px;
-    left: 16px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  nav {
+    text-align: center;
   }
 
   span a {
     border: 2px solid #fff;
-    font-size: 15px;
+    font-size: 17px;
     color: #fff !important;
-    padding: 3px 4px 2px;
+    padding: 3px 5px 1px;
   }
 }
 
