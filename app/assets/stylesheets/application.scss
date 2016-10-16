@@ -116,7 +116,7 @@ li a, li a:visited, li a:focus {
     font-size: .9em;
   }
   #brand {
-    top: 15px;
+    top: 20px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -127,9 +127,9 @@ li a, li a:visited, li a:focus {
 
   span a {
     border: 3px solid #fff;
-    font-size: 24px;
+    font-size: 19px;
     color: #fff !important;
-    padding: 3px 5px 1px;
+    padding: 3px 6px 2px;
   }
 }
 
@@ -139,11 +139,6 @@ li a, li a:visited, li a:focus {
     text-align: center;
   }
 
-  #brand {
-    position: static;
-    display: block;
-    padding: 26px 0 6px;
-  }
   .container {
     text-align: left;
   }
