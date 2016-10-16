@@ -20,7 +20,10 @@
 img {
   width: 100%;
   max-width: 600px;
-  box-shadow: 7px 7px 9px #c4c2c2;
+}
+
+.img {
+   box-shadow: 7px 7px 9px #c4c2c2;
 }
 
 body {
@@ -163,6 +166,7 @@ textarea {
   height: 100px;
 }
 
+
 input, input:focus,
 textarea, textarea:focus {
   outline: 0;
@@ -205,7 +209,7 @@ input[type="submit" i]:active,
 }
 input[type="submit" i]:hover {
   opacity: .9;
-  //-webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 .block {

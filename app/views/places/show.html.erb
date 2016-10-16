@@ -16,7 +16,7 @@
   <h1 class="underline"><%= @place.name %></h1>
   <i><%= @place.address %></i>
     <% if @place.defaultpicture.present? %> 
-    <br><br><%= image_tag @place.defaultpicture %>
+    <br><br><%= image_tag @place.defaultpicture, class: 'img' %>
     <% end %>
   <p><%= @place.description %></p>
 
