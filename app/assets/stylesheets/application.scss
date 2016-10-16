@@ -61,6 +61,7 @@ nav {
 
 .container {
   padding: 0 130px;
+  text-align: center;
 }
 
 .food-box  {
@@ -136,6 +137,8 @@ li a, li a:visited, li a:focus {
     display: block;
     padding: 26px 0 6px;
   }
+  .container {
+    text-align: left;
 }
 /* forms */
 
