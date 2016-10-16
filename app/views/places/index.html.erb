@@ -5,10 +5,10 @@
         <% if place.defaultpicture.present? %> 
         <br><br><%= image_tag place.defaultpicture %>
         <% end %>
-      <p><%= place.description %></p>
+      <p style="text-align: left"><%= place.description %></p>
 
       <% if place.user.present? %>
-        <small>Added by: <%= place.user.email %></small>
+        <small style="text-align: left">Added by: <%= place.user.email %></small>
       <% end %>
       <br>
     </div>
