@@ -59,8 +59,8 @@ a:hover {
 
 nav {
   background: #333;
-  text-align: right;
-  height: 100px;
+  text-align: center;
+  height: 150px;
 }
 
 .container {
@@ -75,7 +75,7 @@ nav {
 }
 ul {
   display: inline-block;
-  padding: 24px 130px 0 0;
+  padding: 78px 120px 0 0;
 }
 
 #brand {
@@ -122,10 +122,6 @@ li a, li a:visited, li a:focus {
     top: 20px;
     left: 50%;
     transform: translate(-50%);
-  }
-
-  nav {
-    text-align: center;
   }
 
   span a {
