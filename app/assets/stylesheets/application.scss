@@ -84,14 +84,14 @@ ul {
 #brand {
   position: absolute;
   top: 30px;
-  left: 130px;
+  left: 25px;
 }
 
 span a {
-  border: 5px solid #fff;
-  font-size: 23px;
-  color: #fff !important;
-  padding: 5px 7px 5px;
+    border: 4px solid #fff;
+    font-size: 20px;
+    color: #fff !important;
+    padding: 3px 5px 3px;
 }
 
 
@@ -209,7 +209,7 @@ input[type="submit" i]:active,
 }
 input[type="submit" i]:hover {
   opacity: .9;
-  -webkit-appearance: button;
+ // -webkit-appearance: button;
 }
 
 .block {
@@ -218,7 +218,7 @@ input[type="submit" i]:hover {
 
 button, html input[type=button], input[type=reset], input[type=submit]
 {
-    -webkit-appearance: button;
+    //-webkit-appearance: button;
     cursor: pointer;
 }
 
