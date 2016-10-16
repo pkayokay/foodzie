@@ -80,13 +80,14 @@ ul {
 
 #brand {
   position: absolute;
+  top: 30px;
   left: 50%;
   transform: translate(-50%);
 }
 
 span a {
   border: 5px solid #fff;
-  font-size: 32px;
+  font-size: 23px;
   color: #fff !important;
   padding: 5px 7px 5px;
 }
@@ -111,6 +112,10 @@ li a, li a:visited, li a:focus {
     padding: 0 14px;
   }
 
+  nav {
+    height: 110px;
+  }
+
   ul {
     padding: 48px 0 0 0;
   }
@@ -119,7 +124,7 @@ li a, li a:visited, li a:focus {
     font-size: .9em;
   }
   #brand {
-    top: 20px;
+    top: 22px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -146,10 +151,6 @@ li a, li a:visited, li a:focus {
     margin: 0 auto 70px;
   }
 
-
-  li {
-    margin: 0 0 10px 0;
-  }
 }
 /* forms */
 
