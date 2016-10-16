@@ -1,5 +1,5 @@
   <% @places.each do |place| %>
-    <div>
+    <div class="food-box">
       <h1><%= link_to place.name, place_path(place) %></h1>
       <i><%= place.address %></i>
         <% if place.defaultpicture.present? %> 
