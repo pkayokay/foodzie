@@ -126,14 +126,14 @@ li a, li a:visited, li a:focus {
   }
 
   span a {
-    border: 2px solid #fff;
-    font-size: 17px;
+    border: 3px solid #fff;
+    font-size: 24px;
     color: #fff !important;
     padding: 3px 5px 1px;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
 
   nav {
     text-align: center;
@@ -146,6 +146,10 @@ li a, li a:visited, li a:focus {
   }
   .container {
     text-align: left;
+  }
+
+  li {
+    margin: 0;
   }
 }
 /* forms */
