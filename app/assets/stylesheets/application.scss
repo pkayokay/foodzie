@@ -82,7 +82,6 @@ nav {
 ul {
   display: inline-block;
   padding: 0;
-  margin-right: 130px;
 }
 
 #brand {
@@ -127,11 +126,7 @@ li a, li a:visited, li a:focus {
   }
 
   #brand {
-    top: 14px;
-  }
-
-  ul {
-    margin-right: 60px;
+    display: none;
   }
 }
 
