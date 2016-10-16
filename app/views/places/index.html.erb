@@ -5,10 +5,6 @@
         <% if place.defaultpicture.present? %> 
         <br><br><%= image_tag place.defaultpicture %>
         <% end %>
-
-      <!-- <% if place.user.present? %>
-        <small><%= place.user.firstname %></small>
-      <% end %> -->
       <p><%= place.description %></p>
 
       <% if place.user.present? %>
