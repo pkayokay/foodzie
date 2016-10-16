@@ -13,7 +13,7 @@
 <div class="center">
   <div class="left">
 
-  <h1><%= @place.name %></h1>
+  <h1 class="underline"><%= @place.name %></h1>
   <i><%= @place.address %></i>
     <% if @place.defaultpicture.present? %> 
     <br><br><%= image_tag @place.defaultpicture %>

@@ -1,6 +1,6 @@
   <% @places.each do |place| %>
     <div class="food-box">
-      <h1><%= link_to place.name, place_path(place) %></h1>
+      <h1 class="underline"><%= link_to place.name, place_path(place) %></h1>
       <i><%= place.address %></i>
         <% if place.defaultpicture.present? %> 
         <br><br><%= image_tag place.defaultpicture %>
