@@ -59,8 +59,7 @@ a:hover {
 
 nav {
   background: #333;
-  text-align: center;
-  height: 150px;
+  text-align: right;
 }
 
 .container {
@@ -75,7 +74,8 @@ nav {
 }
 ul {
   display: inline-block;
-  padding: 78px 0 0 0;
+  padding: 0;
+  margin-right: 130px;
 }
 
 #brand {
@@ -112,36 +112,13 @@ li a, li a:visited, li a:focus {
     padding: 0 14px;
   }
 
-  nav {
-    height: 110px;
-  }
-
-  ul {
-    padding: 48px 0 0 0;
-  }
-
   body {
     font-size: .9em;
   }
-  #brand {
-    top: 22px;
-    left: 50%;
-    transform: translate(-50%);
-  }
 
-  span a {
-    border: 3px solid #fff;
-    font-size: 19px;
-    color: #fff !important;
-    padding: 3px 6px 2px;
-  }
 }
 
 @media (max-width:500px) {
-
-  nav {
-    text-align: center;
-  }
 
   .container {
     text-align: left;
