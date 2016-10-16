@@ -75,13 +75,13 @@ nav {
 }
 ul {
   display: inline-block;
-  padding: 78px 120px 0 0;
+  padding: 78px 0 0 0;
 }
 
 #brand {
   position: absolute;
-  top: 27px;
-  left: 130px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 span a {
