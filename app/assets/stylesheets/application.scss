@@ -60,9 +60,13 @@ a:hover {
   transition: all 0.1s ease;
 }
 
+.align-left {
+  text-align: left !important;
+}
+
 nav {
   background: #333;
-  text-align: right;
+  text-align: center;
 }
 
 .container {
@@ -83,13 +87,13 @@ ul {
 
 #brand {
   position: absolute;
-  top: 30px;
+  top: 16px;
   left: 25px;
 }
 
 span a {
     border: 4px solid #fff;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff !important;
     padding: 3px 5px 3px;
 }
@@ -118,6 +122,17 @@ li a, li a:visited, li a:focus {
     font-size: .9em;
   }
 
+  span a {
+    font-size: 16px;
+  }
+
+  #brand {
+    top: 14px;
+  }
+
+  ul {
+    margin-right: 60px;
+  }
 }
 
 @media (max-width:500px) {
