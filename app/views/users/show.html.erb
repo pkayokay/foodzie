@@ -20,7 +20,7 @@
   <h1 class="text-center">My Places</h1>
 
     <% @user.places.each do |place| %>
-        <h3><%= link_to place.name, place_path(place) %></h3><br />
+        <h3 style="text-decoration: underline"><%= link_to place.name, place_path(place) %></h3><br />
         <i><%= place.address %></i><br />
         <p><%= place.description %></p><br />
     <% end %>
@@ -31,7 +31,7 @@
     <% @user.comments.each do |comment| %>
       <div style="margin-bottom: 20px;">
           <% if comment.humanized_rating.present? %>
-            <b><%= comment.humanized_rating %></b> -
+            <b style="color:#3277ff"><%= comment.humanized_rating %></b> -
           <% end %>
           <%= comment.message %>
       </div>
