@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Oswald');
+ @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 
 
@@ -27,7 +27,7 @@ img {
 }
 
 body {
-  font-family: 'Oswald', monospace;
+  font-family: 'Roboto Mono', monospace;
   padding: 0 0 50px;
   margin: 0;
 }
