@@ -20,7 +20,7 @@
   <h2 class="text-center">My Places</h2>
 
     <% @user.places.each do |place| %>
-        <h1><%= link_to place.name, place_path(place) %></h1><br />
+        <h3><%= link_to place.name, place_path(place) %></h3><br />
         <i><%= place.address %></i><br />
         <p><%= place.description %></p><br />
     <% end %>
@@ -34,7 +34,6 @@
             <b><%= comment.humanized_rating %></b> -
           <% end %>
           <%= comment.message %>
-          <small><%= comment.user.email %></small>
       </div>
     <% end %>
   </div>
