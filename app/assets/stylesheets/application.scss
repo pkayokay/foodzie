@@ -38,7 +38,7 @@ body {
   height: 400px;
 }
 nav a, nav a:visited, nav a:focus {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   transition: all 0.1s ease;
 }
@@ -65,7 +65,6 @@ a:hover {
 }
 
 nav {
-  background: #333;
   text-align: center;
 }
 
@@ -91,9 +90,9 @@ ul {
 }
 
 span a {
-    border: 3px solid #fff;
+    border: 3px solid #222;
     font-size: 17px;
-    color: #fff !important;
+    color: #222 !important;
     padding: 3px 5px 3px;
 }
 
@@ -219,7 +218,7 @@ input[type="submit" i]:active,
 }
 input[type="submit" i]:hover {
   opacity: .9;
- // -webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 .block {
@@ -228,8 +227,8 @@ input[type="submit" i]:hover {
 
 button, html input[type=button], input[type=reset], input[type=submit]
 {
-    //-webkit-appearance: button;
-    cursor: pointer;
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 
