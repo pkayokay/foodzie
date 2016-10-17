@@ -1,3 +1,11 @@
+<style>
+.left a, .left a:visited, .left a:focus {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+</style>
+
 <div class="center">
   <div class="left">
     <h2>Profile </h2>
@@ -21,7 +29,7 @@
 
   <h2 class="text-center">My Comments</h2>
     <% @user.comments.each do |comment| %>
-      <div style="margin-bottom: 7px;">
+      <div style="margin-bottom: 20px;">
           <% if comment.humanized_rating.present? %>
             <b><%= comment.humanized_rating %></b> -
           <% end %>
