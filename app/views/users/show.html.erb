@@ -8,7 +8,18 @@
     <h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
 
     <br>
-    <h2 class="text-center">My Comments</h2>
+
+  <h2 class="text-center">My Places</h2>
+
+    <% @user.places.each do |place| %>
+        <h1><%= link_to place.name, place_path(place) %></h1><br />
+        <i><%= place.address %></i><br />
+        <p><%= place.description %></p><br />
+    <% end %>
+  
+    <br>
+
+  <h2 class="text-center">My Comments</h2>
     <% @user.comments.each do |comment| %>
       <div class="col-xs-12 col-sm-6">
           <% if comment.humanized_rating.present? %>
