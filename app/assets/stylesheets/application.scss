@@ -107,7 +107,7 @@ li {
 }
 
 li a, li a:visited, li a:focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -125,6 +125,9 @@ li a, li a:visited, li a:focus {
   span a {
     font-size: 16px;
   }
+  #brand {
+    top: 13px;
+  }
 
 }
 
@@ -133,7 +136,7 @@ li a, li a:visited, li a:focus {
   .container {
     text-align: left;
   }
-  .nav {
+  nav {
     text-align: center;
   }
   ul {
