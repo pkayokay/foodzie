@@ -1,5 +1,24 @@
-<h2>Profile: <%= @user.email %></h2>
-<i>Member Since: <%= @user.created_at.strftime("%B %d, %Y")  %></i>
-<h4><%= @user.comments.count %> total comments</h4>
-<h4><%= @user.comments.count %> total places</h4>
-<h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
+<div class="center">
+  <div class="left">
+    <h2>Profile </h2>
+    <h3> <%= @user.email %></h3>
+    <i>Member Since: <%= @user.created_at.strftime("%B %d, %Y")  %></i>
+    <h4><%= @user.comments.count %> total comments</h4>
+    <h4><%= @user.comments.count %> total places</h4>
+    <h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
+
+    <br>
+    <h2 class="text-center">My Comments</h2>
+    <% @user.comments.each do |comment| %>
+      <div class="col-xs-12 col-sm-6">
+        <blockquote>
+          <% if comment.humanized_rating.present? %>
+            <b><%= comment.humanized_rating %></b> -
+          <% end %>
+          <%= comment.message %>
+          <small><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
+</div>
