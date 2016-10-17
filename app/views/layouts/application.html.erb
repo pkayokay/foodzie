@@ -6,12 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 <nav>
     <span id="brand"><%= link_to 'Foodzie', root_path %></span>
   <ul>
-    <li><%= link_to 'Profile', '#' %></li>
+    <li><%= link_to 'My Profile', user_path(current_user) %></li>
     <li><%= link_to 'Create', new_place_path %></li>
     <% if user_signed_in? %>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
