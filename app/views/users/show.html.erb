@@ -8,7 +8,7 @@
 
 <div class="center">
   <div class="left">
-    <h2>Profile </h2>
+    <h1>Profile </h1>
     <h3> <%= @user.email %></h3>
     <i>Member Since: <%= @user.created_at.strftime("%B %d, %Y")  %></i>
     <h4><%= @user.comments.count %> total comments</h4>
@@ -17,7 +17,7 @@
 
     <br>
 
-  <h2 class="text-center">My Places</h2>
+  <h1 class="text-center">My Places</h1>
 
     <% @user.places.each do |place| %>
         <h3><%= link_to place.name, place_path(place) %></h3><br />
@@ -27,7 +27,7 @@
   
     <br>
 
-  <h2 class="text-center">My Comments</h2>
+  <h1 class="text-center">My Comments</h1>
     <% @user.comments.each do |comment| %>
       <div style="margin-bottom: 20px;">
           <% if comment.humanized_rating.present? %>
