@@ -60,14 +60,12 @@
     <h2>Comments</h2>
         <% @place.comments.each do |comment| %>
           <div>
-            <blockquote>
               <% if comment.humanized_rating.present? %>
                 <b style="color:#3277ff"><%= comment.humanized_rating %></b> -
               <% end %>
               <%= comment.message %>
               <br>
               <small>- <%= comment.user.email %></small>
-            </blockquote>
           </div>
         <% end %>
       <br>
