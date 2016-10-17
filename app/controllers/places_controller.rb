@@ -32,7 +32,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 
   def update
     @place = Place.find(params[:id])
-    if @place.user != current_user
+    if @place.user != current_user || current_user.id != 1 
       return render text: 'Not Allowed', status: :forbidden
     end
     @place.update_attributes(place_params)
