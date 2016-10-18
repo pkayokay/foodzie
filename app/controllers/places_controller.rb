@@ -37,7 +37,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     end
     @place.update_attributes(place_params)
     if @place.valid?
-      redirect_to root_path
+      redirect_to place_path(place)
     else
       render :edit, status: :unprocessable_entity
     end
