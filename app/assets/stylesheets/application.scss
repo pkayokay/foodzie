@@ -171,7 +171,7 @@ nav li a:hover {
   width: 30px;
   }
 
-  li a, li a:visited, li a:focus {
+  nav li a, nav li a:visited, nav li a:focus {
     padding:  34px 10px;
     transition: all .1s ease;
   }
@@ -192,7 +192,7 @@ nav li a:hover {
     padding: 10px 0;
   }
 
-  li a, li a:hover {
+  nav li a, nav li a:hover {
     font-size: .9em;
     padding: 28px 10px 26px;
   }
