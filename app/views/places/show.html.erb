@@ -12,7 +12,6 @@
 
 <div class="center">
   <div class="left">
-
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
     <% if @place.defaultpicture.present? %> 
@@ -20,7 +19,6 @@
     <% end %>
   <p><%= @place.description %></p>
 
-  <br>
   <% if @place.latitude.present? && @place.longitude.present? %>
 
     <script>
