@@ -27,6 +27,18 @@ img {
    box-shadow: 7px 7px 9px #c4c2c2;
 }
 
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+ font-weight: 400;
+}
+
+p, small, i {
+  font-weight: 100;
+}
+
 body {
   font-family: 'Roboto Condensed';
   padding: 0;
@@ -261,17 +273,25 @@ textarea {
   text-align: left;
 }
 
+select {
+    color: #111;
+    background: white;
+    font-size: .9em;
+    outline: 0;
+}
+
 input[type="submit" i],
 input[type="submit" i]:visited,
 input[type="submit" i]:focus,
 input[type="submit" i]:active,
 .btn {
     width: auto;
-    padding: 10px;
-    border: 1px solid #111;
-    color: #fff;
-    background: #111;
-    border-radius: 2px;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    color: #333 !important;
+    font-weight: 100;
+    background: #fff;
+    border-radius: 5px;
     font-family: "Roboto Condensed";
     font-size: 0.9em;
     outline: 0;
@@ -279,8 +299,9 @@ input[type="submit" i]:active,
     display: inherit;
     transition: all 0.2s ease;
 }
+
 input[type="submit" i]:hover {
-  opacity: .9;
+  color: red;
   -webkit-appearance: button;
 }
 
