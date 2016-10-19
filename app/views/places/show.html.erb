@@ -55,9 +55,9 @@
         <% @place.comments.each do |comment| %>
           <div style="margin-bottom: 20px;">
               <% if comment.humanized_rating.present? %>
-                <p style="display:inline-block;color: #ee2e24"><%= comment.humanized_rating %></p> -
+                <b style="color: #ee2e24; font-weight: 400"><%= comment.humanized_rating %></b> -
               <% end %>
-              <p style="display:inline-block"><%= comment.message %></p>
+              <span style="font-weight:100"><%= comment.message %></span>
               <br>
               <small>- <%= comment.user.email %></small>
           </div>
