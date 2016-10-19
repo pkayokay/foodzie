@@ -1,6 +1,5 @@
   <% @places.each do |place| %>
     <div class="food-box">
-      <h1><%= link_to place.name, place_path(place) %></h1>
       <!--<i><%= place.address %></i>
         <% if place.defaultpicture.present? %> 
         <br><br><%= image_tag place.defaultpicture, class: 'img' %>
@@ -11,10 +10,14 @@
       <% end %>
       <br>
       <br>-->
-      <div class="image-box">
-        <div class="caption"></div>
-        <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
-      </div>
+      <%= link_to place_path(place) do %>        
+        <div class="image-box">
+          <div class="caption">
+            <h1><%= place.name %> </h1>
+          </div>
+          <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
+        </div>
+      <% end %>
     </div>
   <% end %>
   <br>
