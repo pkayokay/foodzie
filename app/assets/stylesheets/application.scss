@@ -120,28 +120,33 @@ nav {
 }
 
 .caption {
-  width: 100%;
-  text-indent: 30px;
-  position: absolute;
-  transition: transform 250ms ease-in-out;
-  transform: translateY(64%);
-  height: auto;
-  color: #fff;
-  bottom: 0;
-  background: #333;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: center;
+    color: #fff;
+
 }
 
-.caption:hover { // or make it react on whole picture?
-  transform: translateY(0%);
+.caption h1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .image-box:hover .color-box {
-  opacity: 0;
+  background: transparent;
 }
 
-
-.caption h1 {
-  font-size: 1.1em;
+.color-box {
+  width: 100%;
+  top: 0;
+  height: 98%;
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.23);
+  transition: all .3s ease;
 }
 
 .food-box  {
