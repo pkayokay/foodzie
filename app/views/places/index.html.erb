@@ -1,7 +1,7 @@
   <% @places.each do |place| %>
     <div class="food-box">
       <%= link_to place_path(place) do %>        
-        <div class="image-box">
+        <div class="image-box animated bounceInDown">
           <div class="color-box"></div>
           <div class="caption">
             <h1><%= place.name %> </h1>

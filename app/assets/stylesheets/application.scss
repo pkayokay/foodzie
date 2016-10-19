@@ -17,23 +17,22 @@
  @import url('animate.css');
 
 $red: #ee2e24;
-
 .pagination {
   font-weight: 100;
 }
+
 img {
   width: 100%;
   max-width: 600px;
 }
 
 .img {
-  // box shadow?
+  // box shadow?;
 }
 
 h1,h2,h3,h4 {
   font-weight: 400;
 }
-
 
 p, small, i {
   font-weight: 100;
@@ -49,7 +48,7 @@ body {
 
 footer {
   width: 100%;
-  border-top:1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
   text-align: center;
   position: static;
   padding: 10px 0 30px;
@@ -79,6 +78,7 @@ footer li a:hover {
   max-width: 600px;
   height: 400px;
 }
+
 nav a, nav a:visited, nav a:focus {
   color: #fff;
   text-decoration: none;
@@ -90,12 +90,11 @@ a:hover {
   text-decoration: none;
 }
 
- a,  a:visited,  a:focus {
+a,  a:visited,  a:focus {
   color: #111;
   text-decoration: none;
   transition: all 0.1s ease;
 }
-
 
 .align-left {
   text-align: left !important;
@@ -112,26 +111,24 @@ nav {
   text-align: left;
 }
 
-
 .image-box {
   position: relative;
   overflow: hidden;
 }
 
 .caption {
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    text-align: center;
-    color: #fff;
-
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  text-align: center;
+  color: #fff;
 }
 
 .caption h1 {
-    font-size: 2em;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .image-box:hover .color-box {
@@ -144,14 +141,14 @@ nav {
   height: 98%;
   position: absolute;
   text-align: center;
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.32);
   transition: all .3s ease;
 }
 
-.food-box  {
-    max-width: 600px;
-    width: 100%;
-    margin: 30px auto 0;
+.food-box {
+  max-width: 600px;
+  width: 100%;
+  margin: 30px auto 0;
 }
 
 ul {
@@ -165,16 +162,14 @@ ul {
   left: 37px;
 }
 
-
 #brand img {
   width: 67px;
 }
 
 span a {
-    font-size: 17px;
-    color: #fff !important;
+  font-size: 17px;
+  color: #fff !important;
 }
-
 
 li {
   list-style: none;
@@ -193,9 +188,8 @@ nav li a,nav  li a:visited,nav  li a:focus {
 }
 
 nav li a:hover {
-  background: $nav-button;  
+  background: $nav-button;
 }
-
 
 @media (max-width:640px) {
 
@@ -217,19 +211,16 @@ nav li a:hover {
   }
 
   nav li a, nav li a:visited, nav li a:focus {
-    padding:  34px 10px;
+    padding: 34px 10px;
     transition: all .1s ease;
-  }
-
+  };
 }
 
 @media (max-width:550px) {
 
   .container {
     text-align: left;
-  }
-
-
+  };
 }
 
 @media (max-width:450px) {
@@ -237,10 +228,12 @@ nav li a:hover {
   nav {
     padding: 10px 0;
   }
+
   #brand {
     top: 27px;
     left: 17px;
   }
+
   #brand img {
     width: 32px;
   }
@@ -252,8 +245,9 @@ nav li a:hover {
 
   footer li a {
     padding: 0 10px;
-  }
+  };
 }
+
 @media (max-width:380px) {
   nav {
     padding-right: 14px;
@@ -266,7 +260,7 @@ nav li a:hover {
 
   #brand {
     top: 29px;
-  }
+  };
 }
 /* forms */
 
@@ -304,7 +298,6 @@ textarea {
   height: 100px;
 }
 
-
 input, input:focus,
 textarea, textarea:focus {
   outline: 0;
@@ -317,6 +310,7 @@ textarea, textarea:focus {
 textarea {
   border: 1px solid #cccccc;
 }
+
 .notice {
   color: #0f8cc7;
   text-align: center;
@@ -334,17 +328,17 @@ textarea {
 }
 
 select {
-    color: #111;
-    background: white;
-    font-size: .9em;
-    outline: 0;
+  color: #111;
+  background: white;
+  font-size: .9em;
+  outline: 0;
 }
 
 .file .required {
-  border:0 ;
+  border: 0;
 }
 
-.place_defaultpicture label  {
+.place_defaultpicture label {
   display: none;
 }
 
@@ -353,19 +347,19 @@ input[type="submit" i]:visited,
 input[type="submit" i]:focus,
 input[type="submit" i]:active,
 .btn {
-    width: auto;
-    padding: 8px 15px;
-    border: 1px solid #ccc;
-    color: #333 !important;
-    font-weight: 100;
-    background: #fff;
-    border-radius: 3px;
-    font-family: "Roboto Condensed";
-    font-size: 0.9em;
-    outline: 0;
-    cursor: pointer;
-    display: inherit;
-    transition: all 0.2s ease;
+  width: auto;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  color: #333 !important;
+  font-weight: 100;
+  background: #fff;
+  border-radius: 3px;
+  font-family: "Roboto Condensed";
+  font-size: 0.9em;
+  outline: 0;
+  cursor: pointer;
+  display: inherit;
+  transition: all 0.2s ease;
 }
 
 input[type="submit" i]:hover {
@@ -378,13 +372,12 @@ input[type="submit" i]:hover {
   display: inline-block !important;
 }
 
-button, html input[type=button], input[type=reset], input[type=submit]
-{
+button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-
 .underline {
-  text-decoration: underline;;
+  text-decoration: underline;
+  ;
 }
