@@ -79,7 +79,6 @@ nav {
 .food-box  {
     max-width: 600px;
     width: 100%;
-    border-bottom: 1px solid #d3d3d3;
     margin: 0 auto;
 }
 
@@ -105,7 +104,6 @@ ul {
 span a {
     font-size: 17px;
     color: #fff !important;
-    text-transform: uppercase;
 }
 
 #app {
@@ -115,7 +113,11 @@ span a {
     transform: translate(-50%);
     top: 13px;
     font-size: 1.2em;
-    border-bottom: 2px solid #fff;
+}
+
+#app span {
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
 }
 
 li {
