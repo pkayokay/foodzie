@@ -11,12 +11,16 @@
 </head>
 <body>
 <nav>
-  <ul>
+<span id="brand"><%= link_to root_path do %><%= image_tag "food.png" %><% end %></span>
+<span id="app"><%= link_to root_path do %>Foodzie - Good Eats!<% end %></span>
+  <ul id="left">
     <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Create', new_place_path %></li>
     <% if user_signed_in? %>
       <li><%= link_to 'Account', user_path(current_user) %></li>
     <% end %>
-    <li><%= link_to 'Create', new_place_path %></li>
+  </ul>
+  <ul>
     <% if user_signed_in? %>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
     <% else %>
@@ -29,9 +33,13 @@
 <div class="container">
   <% if notice.present? %>
     <p class="notice"><%= notice %></p>
+    <br>
+    <br>
   <% end %>
   <% if alert.present? %>
     <p class="alert"><%= alert %></p>
+    <br>
+    <br>
   <% end %>
   <%= yield %>
 </div>
