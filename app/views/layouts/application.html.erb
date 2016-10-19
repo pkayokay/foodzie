@@ -11,7 +11,7 @@
 <body>
 <nav>
 <span id="brand"><%= link_to root_path do %><%= image_tag "food.png" %><% end %></span>
-  <ul>
+  <ul class="animated fadeInDown">
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
     <% if user_signed_in? %>
