@@ -1,15 +1,5 @@
   <% @places.each do |place| %>
     <div class="food-box">
-      <!--<i><%= place.address %></i>
-        <% if place.defaultpicture.present? %> 
-        <br><br><%= image_tag place.defaultpicture, class: 'img' %>
-        <% end %>
-      <p><%= place.description %></p>
-      <% if place.user.present? %>
-        <small style="text-align: left">Added by: <%= place.user.email %></small>
-      <% end %>
-      <br>
-      <br>-->
       <%= link_to place_path(place) do %>        
         <div class="image-box">
           <div class="color-box"></div>
