@@ -8,7 +8,7 @@
 </style>
   <div class="left">
     <h1>Account </h1>
-    <h3> <%= @user.email %></h3>
+    <h4><%= @user.email %></h4>
     <i>Member Since: <%= @user.created_at.strftime("%B %d, %Y")  %></i>
     <h4><%= @user.comments.count %> total comments</h4>
     <h4><%= @user.comments.count %> total places</h4>
@@ -28,9 +28,9 @@
 
   <h1 class="text-center">My Comments</h1>
     <% @user.comments.each do |comment| %>
-      <div style="margin-bottom: 20px;">
+      <div style="margin-bottom: 20px; font-weight: 300;">
           <% if comment.humanized_rating.present? %>
-            <b style="color:#3277ff"><%= comment.humanized_rating %></b> -
+            <b style="color: #ee2e24; font-weight: 400"><%= comment.humanized_rating %></b> -
           <% end %>
           <%= comment.message %>
       </div>
