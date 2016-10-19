@@ -64,12 +64,12 @@ a:hover {
 }
 
 nav {
-  text-align: right;
+  text-align: center;
   background: #222;
 }
 
 .container {
-  padding: 10px 130px;
+  padding: 10px 0;
   text-align: left;
 }
 
@@ -82,7 +82,6 @@ nav {
 ul {
   display: inline-block;
   padding: 0;
-  margin-right: 20px
 }
 
 #brand {
@@ -102,14 +101,25 @@ span a {
 li {
   list-style: none;
   display: inline-block;
-  margin-right: 14px;
+  margin-left: -5px;
 }
 
 li a, li a:visited, li a:focus {
   color: #fff;
   text-decoration: none;
+  padding: 19px 16px;
+  background: #222;
+  transition: all .1s ease
 }
 
+li a:hover {
+  background: #353535;  
+  opacity: 1; 
+}
+
+.selected {
+  background: #353535;
+}
 
 @media (max-width:640px) {
 
