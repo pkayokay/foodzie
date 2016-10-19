@@ -45,7 +45,7 @@
     <h2>Location</h2>
     <div id="map"></div>
     <% end %>
-
+    <br>
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn' %>
       <%= link_to 'Delete', place_path(@place), method: :delete, data: {confirm: "Are you sure you want to delete this?"}, class: 'btn' %>
@@ -55,9 +55,9 @@
         <% @place.comments.each do |comment| %>
           <div style="margin-bottom: 20px;">
               <% if comment.humanized_rating.present? %>
-                <b style="color:#3277ff"><%= comment.humanized_rating %></b> -
+                <p style="display:inline-block;color: #ee2e24"><%= comment.humanized_rating %></p> -
               <% end %>
-              <%= comment.message %>
+              <p style="display:inline-block"><%= comment.message %></p>
               <br>
               <small>- <%= comment.user.email %></small>
           </div>
