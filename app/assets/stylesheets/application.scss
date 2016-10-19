@@ -14,10 +14,6 @@
  *= require_self
  */
  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
-html { 
-  background: url(restaurantbw.png);
-}
-
 
 img {
   width: 100%;
@@ -52,7 +48,7 @@ a:hover {
 }
 
  a,  a:visited,  a:focus {
-  color: #333;
+  color: #222;
   text-decoration: none;
   transition: all 0.1s ease;
 }
@@ -69,7 +65,7 @@ a:hover {
 
 nav {
   text-align: right;
-  background: #414141;
+  background: #222;
 }
 
 .container {
@@ -193,7 +189,11 @@ input, input:focus,
 textarea, textarea:focus {
   outline: 0;
   font-family: 'Roboto Condensed';
-  font-size: 12px;
+  font-size: .9em;
+}
+
+textarea {
+  border: 1px solid #cccccc;
 }
 .notice {
   color: #0f8cc7;
@@ -207,7 +207,7 @@ textarea, textarea:focus {
 
 .hint {
   display: block;
-  font-size: 12px;
+  font-size: 0.9em;
   text-align: left;
 }
 
@@ -218,12 +218,12 @@ input[type="submit" i]:active,
 .btn {
     width: auto;
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid #222;
     color: #fff;
-    background: #333;
+    background: #222;
     border-radius: 2px;
     font-family: "Roboto Condensed";
-    font-size: 15px;
+    font-size: 0.9em;
     outline: 0;
     cursor: pointer;
     display: inherit;
