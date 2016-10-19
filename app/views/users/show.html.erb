@@ -19,9 +19,9 @@
   <h1 class="text-center">My Places</h1>
 
     <% @user.places.each do |place| %>
-        <h3><%= link_to place.name, place_path(place) %></h3><br />
+        <h3><%= link_to place.name, place_path(place) %></h3>
         <i><%= place.address %></i><br />
-        <p><%= place.description %></p><br />
+        <p><%= place.description %></p>
     <% end %>
   
     <br>
