@@ -10,14 +10,9 @@
 </head>
 <body>
 <nav>
-<span id="brand"><%= link_to root_path do %><%= image_tag "food.png" %><% end %></span>
-<span id="app"><%= link_to root_path do %><span>Foodzie</span> - Good Eats!<% end %></span>
-  <ul id="left">
+  <ul>
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
-
-  </ul>
-  <ul>
     <% if user_signed_in? %>
       <li><%= link_to 'Account', user_path(current_user) %></li>
     <% end %>
@@ -29,7 +24,6 @@
     <% end %>
   </ul>
 </nav>
-
 <div class="container">
   <% if notice.present? %>
     <p class="notice"><%= notice %></p>
@@ -39,5 +33,16 @@
   <% end %>
   <%= yield %>
 </div>
+<footer>
+  <ul>
+    <li><%= link_to 'About', about_path %></li>
+    <li><a href="mailto:pkayokay@gmail.com">Contact</a></li>
+    <li><a href="https://github.com/pkayokay/foodzie" target="_blank">Github</a></li>
+  </ul>
+  <ul style="display:block">
+    <li style="font-weight:300; font-size: .7em">Created by pkayokay.</li>
+  </ul>
+
+</footer>
 </body>
 </html>

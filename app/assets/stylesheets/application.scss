@@ -16,6 +16,8 @@
  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
  @import url('animate.css');
 
+$red: #ee2e24;
+
 img {
   width: 100%;
   max-width: 600px;
@@ -27,9 +29,31 @@ img {
 
 body {
   font-family: 'Roboto Condensed';
-  padding: 0 0 50px;
+  padding: 0;
   margin: 0;
   font-size: 1.2em;
+  border-top: 5px solid $red;
+}
+
+footer {
+  border-top: 1px solid #dddddd;
+  width: 100%;
+  text-align: center;
+  position: static;
+  padding: 10px 0 10px;
+  margin-top: 40px;
+}
+
+footer li a,footer  li a:visited, footer li a:focus {
+  color: #545454;
+  text-decoration: none;
+  transition: all .3s ease;
+  font-weight: 100;
+  padding: 0 22px;
+}
+
+footer li a:hover {
+  opacity: .8; 
 }
 
 #map {
@@ -49,26 +73,20 @@ a:hover {
 }
 
  a,  a:visited,  a:focus {
-  color: #222;
+  color: #111;
   text-decoration: none;
   transition: all 0.1s ease;
 }
 
-.left a, .left a:visited, .left a:focus {
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.1s ease;
-}
 
 .align-left {
   text-align: left !important;
 }
 
 nav {
-  text-align: right;
-  background: #222;
-  height: 61px;
-  padding-right: 70px;
+  text-align: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .container {
@@ -82,10 +100,6 @@ nav {
     margin: 0 auto;
 }
 
-#left {
-  position: absolute;
-  left: 80px;
-}
 ul {
   display: inline-block;
   padding: 0;
@@ -93,12 +107,17 @@ ul {
 
 #brand {
   position: absolute;
-  top: 14px;
-  left: 25px;
+  top: 20px;
+  left: 0px;
+}
+
+#brand a {
+  background: #444;
+  padding: 60px 26px 17px 25px;
 }
 
 #brand img {
-  width: 34px;
+  width: 67px;
 }
 
 span a {
@@ -106,19 +125,6 @@ span a {
     color: #fff !important;
 }
 
-#app {
-    left: 50%;
-    position: absolute;
-    color: #fff;
-    transform: translate(-50%);
-    top: 13px;
-    font-size: 1.2em;
-}
-
-#app span {
-  border-bottom: 2px solid #fff;
-  text-transform: uppercase;
-}
 
 li {
   list-style: none;
@@ -126,27 +132,26 @@ li {
   margin-left: -5px;
 }
 
-li a, li a:visited, li a:focus {
-  color: #fff;
+$nav-button: #f4f4f4;
+
+nav li a,nav  li a:visited,nav  li a:focus {
+  color: #111;
   text-decoration: none;
-  padding: 19px 11px;
-  background: #222;
-  transition: all .1s ease
+  padding: 37px 22px;
+  transition: all .3s ease;
+  text-transform: uppercase;
 }
 
-li a:hover {
-  background: #353535;  
+nav li a:hover {
+  background: $nav-button;  
   opacity: 1; 
 }
 
-.selected {
-  background: #353535;
-}
 
 @media (max-width:640px) {
 
   .container {
-    padding: 30px 11px;
+    padding: 10px 11px;
   }
 
   body {
@@ -156,33 +161,21 @@ li a:hover {
   span a {
     font-size: 16px;
   }
+
   #brand {
     top: 11px;
     left: 15px;
   }
+
   #brand img {
   width: 30px;
   }
-  nav {
-    padding-right: 60px;
-  }
-  #app {
-    top: 12px;
-  }
+
   li a, li a:visited, li a:focus {
-    padding: 16px 8px;
+    padding:  34px 10px;
     transition: all .1s ease;
   }
 
-  li a:hover {
-    background: #353535;  
-    opacity: 1; 
-  }
-
-  nav {
-    text-align: right;
-    height: 51px;
-  }
 }
 
 @media (max-width:550px) {
@@ -191,23 +184,17 @@ li a:hover {
     text-align: left;
   }
 
-  nav {
-    padding-right: 10px;
-  }
-
-  #left {
-    position: inherit;
-  }
-  #app {
-    left: 55px;
-    transform: none;
-  }
 }
 
 @media (max-width:450px) {
 
-  #app {
-    display: none;
+  nav {
+    padding: 10px 0;
+  }
+
+  li a, li a:hover {
+    font-size: .9em;
+    padding: 28px 10px 26px;
   }
 }
 
@@ -281,9 +268,9 @@ input[type="submit" i]:active,
 .btn {
     width: auto;
     padding: 10px;
-    border: 1px solid #222;
+    border: 1px solid #111;
     color: #fff;
-    background: #222;
+    background: #111;
     border-radius: 2px;
     font-family: "Roboto Condensed";
     font-size: 0.9em;
