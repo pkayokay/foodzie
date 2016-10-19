@@ -13,8 +13,10 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
+ @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+html { 
+  background: url(restaurantbw.png);
+}
 
 
 img {
@@ -27,9 +29,10 @@ img {
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed';
   padding: 0 0 50px;
   margin: 0;
+  font-size: 1.3em;
 }
 
 #map {
@@ -118,7 +121,7 @@ li a, li a:visited, li a:focus {
   }
 
   body {
-    font-size: .9em;
+    font-size: 1em;
   }
 
   span a {
@@ -144,9 +147,6 @@ li a, li a:visited, li a:focus {
 
   .food-box {
     margin: 0 auto 70px;
-  }
-  body {
-    font-size: .8em;
   }
 
   #brand {
@@ -192,7 +192,7 @@ textarea {
 input, input:focus,
 textarea, textarea:focus {
   outline: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed';
   font-size: 12px;
 }
 .notice {
@@ -222,7 +222,7 @@ input[type="submit" i]:active,
     color: #fff;
     background: #333;
     border-radius: 2px;
-    font-family: "Roboto Mono";
+    font-family: "Roboto Condensed";
     font-size: 15px;
     outline: 0;
     cursor: pointer;
