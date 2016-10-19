@@ -76,7 +76,8 @@ nav {
 .food-box  {
     max-width: 600px;
     width: 100%;
-    margin: 0 auto 85px;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 auto;
 }
 ul {
   display: inline-block;
@@ -139,10 +140,6 @@ li a, li a:visited, li a:focus {
   }
   ul {
     margin-right: 0;
-  }
-
-  .food-box {
-    margin: 0 auto 70px;
   }
 
   #brand {
