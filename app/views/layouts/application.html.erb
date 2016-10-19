@@ -7,12 +7,11 @@
   <%= csrf_meta_tags %>
   <link href="/assets/favico.ico" rel="shortcut icon" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/assets/stylesheets/animate.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <nav>
 <span id="brand"><%= link_to root_path do %><%= image_tag "food.png" %><% end %></span>
-<span id="app" class="animated bounceInDown"><%= link_to root_path do %>Foodzie - Good Eats!<% end %></span>
+<span id="app"><%= link_to root_path do %>Foodzie - Good Eats!<% end %></span>
   <ul id="left">
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
@@ -34,12 +33,9 @@
 <div class="container">
   <% if notice.present? %>
     <p class="notice"><%= notice %></p>
-    <br>
   <% end %>
   <% if alert.present? %>
     <p class="alert"><%= alert %></p>
-    <br>
-
   <% end %>
   <%= yield %>
 </div>

@@ -68,11 +68,11 @@ nav {
   text-align: right;
   background: #222;
   height: 61px;
-  padding-right: 80px;
+  padding-right: 70px;
 }
 
 .container {
-  padding: 35px 0 10px;
+  padding: 10px 130px 10px;
   text-align: left;
 }
 
@@ -85,7 +85,7 @@ nav {
 
 #left {
   position: absolute;
-  left: 90px;
+  left: 80px;
 }
 ul {
   display: inline-block;
@@ -161,7 +161,9 @@ li a:hover {
   #brand img {
   width: 30px;
   }
-
+  nav {
+    padding-right: 60px;
+  }
   #app {
     top: 12px;
   }
@@ -219,14 +221,6 @@ form {
   text-align: center;
 }
 
-.form-box {
-  text-align: center;
-  border: 1px solid #d3d3d3;
-  max-width: 400px;
-  width: 100%;
-  padding: 10px 0 30px;
-  margin: auto;
-}
 .left {
   text-align: left;
   display: inline-block;
