@@ -226,7 +226,7 @@ nav li a:hover {
     padding: 62px 23px 10px;
   }
 
-  nav li a, nav li a:visited, nav li a:focus {
+  nav li a, nav li a:hover, nav li a:focus, nav li a:visited {
     padding: 34px 10px;
     transition: all .1s ease;
   };
@@ -264,7 +264,7 @@ nav li a:hover {
     width: 32px;
   }
 
-  nav li a, nav li a:hover {
+  nav li a, nav li a:hover, nav li a:focus, nav li a:visited {
     font-size: .85em;
     padding: 18px 10px 17px;
   }
