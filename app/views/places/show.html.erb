@@ -12,9 +12,7 @@
 
 <div class="center">
   <div class="left">
-  <%= link_to "https://www.google.com/maps/place/#{@place.address}", :target => "_blank" do %>
-    dasdsa
-    <% end %>
+
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
     <% if @place.defaultpicture.present? %> 
@@ -46,7 +44,10 @@
     </script>
 
     <h2>Location</h2>
-    <div id="map"></div>
+    
+      <%= link_to "https://www.google.com/maps/place/#{@place.address}", :target => "_blank" do %>
+        <div id="map"></div>
+      <% end %>
     <% end %>
     <br>
     <% if current_user && current_user == @place.user %>
