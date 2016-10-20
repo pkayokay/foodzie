@@ -201,8 +201,11 @@ nav li a:hover {
   background: $nav-button;
 }
 
-@media (max-width:710px) {
+@media (max-width:740px) {
 
+  #right {
+    right: 10px;
+  }
   .container {
     padding: 10px 11px;
   }
@@ -233,7 +236,7 @@ nav li a:hover {
   }
 }
 
-@media (max-width:470px) {
+@media (max-width:540px) {
 
   nav {
     padding: 0;
@@ -242,7 +245,7 @@ nav li a:hover {
   }
 
   #right {
-    position: relative;
+    position: static;
   }
 
   #brand {
