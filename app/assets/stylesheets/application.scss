@@ -335,13 +335,13 @@ label {
 
 input {
   width: 300px;
-  max-width: 95%;
+  max-width: 92%;
 }
 
 textarea {
-  width: 300px;
-  max-width: 95%;
+  @extend input;
   height: 100px;
+  width: 92%;
 }
 
 input, input:focus,
@@ -351,7 +351,6 @@ textarea, textarea:focus {
   font-size: .9em;
   border: 1px solid #ccc;
   border-radius: 3px;
-  box-shadow: none;
 }
 
 textarea {
@@ -396,7 +395,7 @@ input[type="submit" i]:active,
 .btn {
   width: auto;
   padding: 8px 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   color: #333 !important;
   font-weight: 100;
   background: #fff;
