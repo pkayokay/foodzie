@@ -384,6 +384,9 @@ select {
   border: 0;
 }
 
+abbr[title] {
+    text-decoration: none;
+}
 .place_defaultpicture label {
   display: none;
 }
