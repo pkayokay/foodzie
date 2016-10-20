@@ -17,14 +17,17 @@
     <br>
 
   <h1 class="text-center">My Places</h1>
-
+  <% if @user.places.present? %>
     <% @user.places.each do |place| %>
         <h3><%= link_to place.name, place_path(place) %></h3>
         <i><%= place.address %></i><br />
         <p><%= place.description %></p>
     <% end %>
+  <% else %>
+    <p>No places</p>
+  <% end %>
   
-    <br>
+  <br>
 
   <h1 class="text-center">My Comments</h1>
     <% if @user.comments.present? %>
