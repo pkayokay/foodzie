@@ -15,7 +15,7 @@
 
   <h1><%= @place.name %></h1>
     <% if @place.defaultpicture.present? %> 
-    <br><br><%= image_tag @place.defaultpicture, class: 'img' %>
+    <%= image_tag @place.defaultpicture, class: 'img' %>
     <% end %>
   <p><%= @place.description %></p>
 
@@ -47,6 +47,8 @@
       <%= link_to "https://www.google.com/maps/place/#{@place.address}", :target => "_blank" do %>
         <i><%= @place.address %></i>      
       <% end %>
+      <br>
+      <br>
       <div id="map"></div>
 
     <% end %>
