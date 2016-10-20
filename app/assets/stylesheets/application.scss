@@ -339,7 +339,8 @@ input {
 }
 
 textarea {
-  @extend input;
+  width: 300px;
+  max-width: 95%;
   height: 100px;
 }
 
@@ -350,6 +351,7 @@ textarea, textarea:focus {
   font-size: .9em;
   border: 1px solid #ccc;
   border-radius: 3px;
+  box-shadow: none;
 }
 
 textarea {
