@@ -120,6 +120,21 @@ nav {
   background: transparent;
 }
 
+.caption {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  text-align: center;
+  color: #fff;
+}
+
+.caption h1 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .color-box {
   width: 100%;
   top: 0;
