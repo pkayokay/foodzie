@@ -341,7 +341,6 @@ input {
 textarea {
   @extend input;
   height: 100px;
-  width: 100%;
 }
 
 input, input:focus,
@@ -395,7 +394,7 @@ input[type="submit" i]:active,
 .btn {
   width: auto;
   padding: 8px 15px;
-  border: 1px solid #333;
+  border: 1px solid #7e7e7e;
   color: #333 !important;
   font-weight: 100;
   background: #fff;
