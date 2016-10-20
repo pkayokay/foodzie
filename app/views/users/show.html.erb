@@ -27,12 +27,16 @@
     <br>
 
   <h1 class="text-center">My Comments</h1>
-    <% @user.comments.each do |comment| %>
-      <div style="margin-bottom: 20px; font-weight: 300;">
-          <% if comment.humanized_rating.present? %>
-            <b style="color: #ee2e24; font-weight: 400"><%= comment.humanized_rating %></b> -
-          <% end %>
-          <%= comment.message %>
-      </div>
+    <% if @user.comments.present? %>
+      <% @user.comments.each do |comment| %>
+        <div style="margin-bottom: 20px; font-weight: 300;">
+            <% if comment.humanized_rating.present? %>
+              <b style="color: #ee2e24; font-weight: 400"><%= comment.humanized_rating %></b> -
+            <% end %>
+            <%= comment.message %>
+        </div>
+      <% end %>
+    <% else %>
+    <p>No comments</p>
     <% end %>
   </div>
