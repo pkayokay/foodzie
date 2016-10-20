@@ -59,12 +59,21 @@ footer span {
   font-weight: 500;
 }
 
-footer li a,footer  li a:visited, footer li a:focus {
+footer li a:focus {
+  color: #727272;
+  text-decoration: none;
+  transition: all .1s ease;
+  font-weight: 100;
+  outline: 0;    
+}
+
+footer li a,footer  li a:visited {
   color: #727272;
   text-decoration: none;
   transition: all .1s ease;
   font-weight: 100;
   padding: 0 22px;
+  outline: 0;    
 }
 
 footer li a:hover {
@@ -81,6 +90,7 @@ nav a, nav a:visited, nav a:focus {
   color: #fff;
   text-decoration: none;
   transition: all 0.1s ease;
+  outline: 0;
 }
 
 a:hover {
@@ -195,6 +205,7 @@ nav li a,nav  li a:visited,nav  li a:focus {
   padding: 37px 22px;
   transition: all .3s ease;
   text-transform: uppercase;
+  outline: 0;
 }
 
 nav li a:hover {
