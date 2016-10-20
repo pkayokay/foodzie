@@ -43,7 +43,6 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.2em;
-  border-top: 5px solid #333;
 }
 
 footer {
@@ -105,6 +104,11 @@ nav {
   border-bottom: 1px solid #e2e2e2;
 }
 
+#right {
+  position: absolute;
+  right: 0;
+}
+
 .container {
   padding: 10px 130px 10px;
   text-align: left;
@@ -158,12 +162,18 @@ ul {
 
 #brand {
   position: absolute;
-  top: 22px;
-  left: 37px;
+  top: 17px;
+  left:0;
 }
 
 #brand img {
   width: 67px;
+}
+
+#brand a, #brand a:hover {
+  background: #333333;
+  padding: 62px 23px 15px;
+  opacity: 1;
 }
 
 span a {
@@ -191,7 +201,7 @@ nav li a:hover {
   background: $nav-button;
 }
 
-@media (max-width:640px) {
+@media (max-width:710px) {
 
   .container {
     padding: 10px 11px;
@@ -208,33 +218,39 @@ nav li a:hover {
   #brand img {
     width: 62px;
   }
-  #brand {
-    left: 14px;
-    top: 20px;
+
+  #brand a {
+    padding: 62px 23px 10px;
   }
 
   nav li a, nav li a:visited, nav li a:focus {
     padding: 34px 10px;
     transition: all .1s ease;
   };
+
+  footer {
+    padding-bottom: 100px;
+  }
 }
 
-@media (max-width:550px) {
-
-  .container {
-    text-align: left;
-  };
-}
-
-@media (max-width:450px) {
+@media (max-width:470px) {
 
   nav {
-    padding: 10px 0;
+    padding: 0;
+    padding-right: 25px;
+    text-align: right;
+  }
+
+  #right {
+    position: relative;
   }
 
   #brand {
-    top: 27px;
-    left: 17px;
+    top: 11px;
+  }
+
+  #brand a {
+    padding: 27px 11px 7px;
   }
 
   #brand img {
@@ -243,7 +259,7 @@ nav li a:hover {
 
   nav li a, nav li a:hover {
     font-size: .85em;
-    padding: 28px 10px 27px;
+    padding: 18px 10px 17px;
   }
 
   footer li a {
@@ -254,20 +270,17 @@ nav li a:hover {
   }
 }
 
-@media (max-width:380px) {
+@media (max-width:370px) {
+  
+  #home {
+    display: none;
+  }
   nav {
-    padding-right: 10px;
-    text-align: right;
+    padding-right: 14px;
   }
-
-  #brand img {
-    width: 28px;
-  }
-
-  #brand {
-    top: 29px;
-  };
 }
+
+
 /* forms */
 
 form {
