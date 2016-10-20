@@ -234,6 +234,10 @@ nav li a:hover {
   footer {
     padding-bottom: 100px;
   }
+
+  footer li a {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width:540px) {
@@ -266,7 +270,7 @@ nav li a:hover {
   }
 
   footer li a {
-    padding: 0 10px;
+    font-size: .9em;
   }
   li {
     margin-left: -9px;
