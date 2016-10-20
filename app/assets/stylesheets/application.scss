@@ -99,8 +99,8 @@ a,  a:visited,  a:focus {
 }
 
 nav {
-  text-align: center;
-  padding: 18px 0;
+  text-align: left;
+  padding: 18px 0 18px 119px;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -207,7 +207,7 @@ nav li a:hover {
     right: 10px;
   }
   .container {
-    padding: 10px 11px;
+    padding: 10px 20px;
   }
 
   body {
@@ -222,12 +222,12 @@ nav li a:hover {
     width: 62px;
   }
 
-  #brand a {
+  #brand a, #brand a:hover {
     padding: 62px 23px 10px;
   }
 
   nav li a, nav li a:hover, nav li a:focus, nav li a:visited {
-    padding: 34px 10px;
+    padding: 34px 14px;
     transition: all .1s ease;
   }
 
@@ -252,7 +252,7 @@ nav li a:hover {
     top: 11px;
   }
 
-  #brand a {
+  #brand a, #brand a:hover {
     padding: 27px 11px 7px;
   }
 
