@@ -12,8 +12,7 @@
 
 <div class="center">
   <div class="left">
-  <%= link_to "https://www.google.com/maps/place/#{@place.address}", :target => "_blank" %>
-  url
+  <%= link_to, "https://www.google.com/maps/place/#{@place.address}", :target => "_blank" %>
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
     <% if @place.defaultpicture.present? %> 
