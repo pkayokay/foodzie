@@ -15,7 +15,7 @@ Foodzie is web application built on Ruby on Rails. Reviewers can create, edit, a
 * Uses Devise for user forms and security.
 
 
-![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/project.png)
+![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/1.png)
 
 ![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/1.png)
 ![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/2.png)
