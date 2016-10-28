@@ -16,4 +16,4 @@ Foodzie is web application built on Ruby on Rails. Reviewers can create, edit, a
 
 
 ###### Here's a sneak peek at my todo list.
-![alt tag](https://github.com/AlekstheRealist/Todo/blob/master/app/assets/images/project.png)
+![alt tag](https://github.com/pkayokay/foodzie/app/assets/images/project.png)
