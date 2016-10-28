@@ -1,28 +1,19 @@
-== README
+# Foodzie
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Ruby on Rails Web Application
 
-Things you may want to cover:
+Foodzie is web application built on Ruby on Rails. Reviewers can create, edit, and delete places they've been to...think of it like a social media app for restaurants. Foodzie provides a list of restaurants(with reviews and comments) that will help people find the right place to eat! Check it out [here](https://foodzie.herokuapp.com/).
 
-* Ruby version
+### Features: 
 
-* System dependencies
+* Users can create, edit, and delete places.
 
-* Configuration
+* Photo Upload with CarrierWave.
 
-* Database creation
+* Uses Twitter Bootstrap for CSS and components.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Uses Devise for user forms and security.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###### Here's a sneak peek at my todo list.
+![alt tag](https://github.com/AlekstheRealist/Todo/blob/master/app/assets/images/project.png)
