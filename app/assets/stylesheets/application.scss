@@ -90,7 +90,7 @@ footer li a:hover {
 nav a, nav a:visited, nav a:focus {
   color: #fff;
   text-decoration: none;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   outline: 0;
 }
 
@@ -110,9 +110,9 @@ a,  a:visited,  a:focus {
 }
 
 nav {
+  background: #222;
   text-align: left;
   padding: 18px 0 18px 119px;
-  border-bottom: 1px solid #e2e2e2;
 }
 
 #right {
@@ -186,7 +186,7 @@ ul {
 }
 
 #brand a, #brand a:hover {
-  background: #333333;
+  background: #222;
   padding: 62px 23px 14px;
   opacity: 1;
 }
@@ -202,10 +202,10 @@ li {
   margin-left: -5px;
 }
 
-$nav-button: #f4f4f4;
+$nav-button: #4c4c4c;
 
 nav li a,nav  li a:visited,nav  li a:focus {
-  color: #111;
+  color: #fff;
   text-decoration: none;
   padding: 37px 22px;
   transition: all .3s ease;
@@ -215,6 +215,7 @@ nav li a,nav  li a:visited,nav  li a:focus {
 
 nav li a:hover {
   background: $nav-button;
+  opacity: 1;
 }
 
 @media (max-width:740px) {
@@ -297,7 +298,7 @@ nav li a:hover {
   }
 }
 
-@media (max-width:420px) {
+@media (max-width:370px) {
   
   #home {
     display: none;
