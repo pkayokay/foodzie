@@ -14,10 +14,9 @@
   <ul>
     <li id="home"><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Create', new_place_path %></li>
   </ul>
   <ul id="right">
-    <li><%= link_to 'Create', new_place_path %></li>
-
     <% if user_signed_in? %>
       <li><%= link_to 'Account', user_path(current_user) %></li>
     <% end %>

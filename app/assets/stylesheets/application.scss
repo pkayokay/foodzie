@@ -112,7 +112,7 @@ a,  a:visited,  a:focus {
 nav {
   background: #222;
   text-align: left;
-  padding: 18px 0 18px 119px;
+  padding: 18px 10px 18px;
 }
 
 #right {
@@ -177,8 +177,9 @@ ul {
 
 #brand {
   position: absolute;
-  top: 17px;
-  left:0;
+  left: 50%;
+  top: 16px;
+  transform: translate(-50%);
 }
 
 #brand img {
@@ -235,8 +236,11 @@ nav li a:hover {
     font-size: 16px;
   }
 
+  #brand {
+    top: 23px;
+  }
   #brand img {
-    width: 62px;
+    width: 45px;
   }
 
   #brand a, #brand a:hover {
@@ -267,6 +271,7 @@ nav li a:hover {
 
   #brand {
     top: 11px;
+    left: 24px;
   }
 
   #brand a, #brand a:hover {
