@@ -19,19 +19,19 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
   end 
 
   def show
-    @place = Place.find(params[:id])  
+    @place = Place.friendly.find(params[:id])  
     @comment = Comment.new
   end
 
   def edit
-    @place = Place.find(params[:id])
+    @place = Place.friendly.find(params[:id])
     if @place.user != current_user
       return render text: 'Not Allowed', status: :forbidden
     end
   end
 
   def update
-    @place = Place.find(params[:id])
+    @place = Place.friendly.find(params[:id])
     if @place.user != current_user 
      return render text: 'Not Allowed', status: :forbidden
     end
@@ -44,7 +44,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
   end
 
   def destroy
-    @place = Place.find(params[:id])
+    @place = Place.friendly.find(params[:id])
     
     if @place.user != current_user
       return render text: 'Not Allowed', status: :forbidden
