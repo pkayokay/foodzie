@@ -17,6 +17,11 @@
  @import url('animate.css');
  @import url('animate.css.scss');
 
+
+abbr[title] {
+    text-decoration: none;
+    display: none;
+}
 $red: #ee2e24;
 .pagination {
   font-weight: 100;

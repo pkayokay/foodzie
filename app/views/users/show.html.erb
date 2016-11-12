@@ -6,6 +6,7 @@
 </style>
   <div class="left">
     <h1>Account </h1>
+    <h3><%= @user.firstname %> <%= @user.lastname %> </h3>
     <h4><%= @user.email %></h4>
     <i>Member Since: <%= @user.created_at.strftime("%B %d, %Y")  %></i>
     <h4><%= @user.comments.count %> total comments</h4>
