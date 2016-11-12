@@ -115,9 +115,10 @@ a,  a:visited,  a:focus {
 }
 
 nav {
-  background: #222;
+  background: #fbfbfb;
   text-align: left;
   padding: 18px 10px 18px;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 #right {
@@ -192,7 +193,7 @@ ul {
 }
 
 #brand a, #brand a:hover {
-  background: #222;
+  background: #fbfbfb;
   padding: 62px 23px 14px;
   opacity: 1;
 }
@@ -208,13 +209,14 @@ li {
   margin-left: -5px;
 }
 
-$nav-button: #4c4c4c;
+$nav-button: #f3f3f3;
 
 nav li a,nav  li a:visited,nav  li a:focus {
-  color: #fff;
+  color: #101010;
   text-decoration: none;
   padding: 37px 22px;
-  transition: all .3s ease;
+  font-weight: 300;
+  transition: all .2s ease;
   // text-transform: uppercase;
   outline: 0;
 }
