@@ -1,5 +1,5 @@
   <% @places.each do |place| %>
-    <div class="food-box">
+    <div class="food-box col-md-6">
       <%= link_to place_path(place) do %>        
         <div class="image-box">
           <div class="color-box"></div>
@@ -15,6 +15,5 @@
 <div class="center"> 
   <%= will_paginate @posts %>
 </div>
-
 
 

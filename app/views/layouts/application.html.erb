@@ -11,6 +11,7 @@
 <body>
 <nav>
 <span id="brand"><%= link_to root_path do %><%= image_tag "logo.png" %><% end %></span>
+
   <ul>
     <li id="home"><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'About', about_path %></li>
@@ -28,6 +29,9 @@
     <% end %>
   </ul>
 </nav>
+<!-- <div class=jumbotron>
+  <h1>Foodzie</h1>
+</div> -->
 <div class="container">
   <!--<% if notice.present? %>
     <p class="notice"><%= notice %></p>
