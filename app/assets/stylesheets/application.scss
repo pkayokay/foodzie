@@ -30,7 +30,6 @@ $red: #ee2e24;
 
 img {
   width: 100%;
-  max-width: 600px;
 }
 
 .img {
@@ -154,6 +153,7 @@ nav {
 .image-box {
   position: relative;
   overflow: hidden;
+  width: inherit;
 }
 
 
@@ -183,7 +183,7 @@ nav {
 .color-box {
   width: 100%;
   top: 0;
-  height: 99%;
+  height: 98.6%;
   position: absolute;
   text-align: center;
   background: rgba(0, 0, 0, 0.32);
@@ -191,9 +191,10 @@ nav {
 }
 
 .food-box {
-  max-width: 600px;
-  width: 100%;
-  margin: 15px auto 0;
+  width: 50%;
+  margin: 0 0 -5px;
+  float:left;
+  height: 100%;
 }
 
 ul {
@@ -245,6 +246,9 @@ nav li a:hover {
 
 @media (max-width:740px) {
 
+  .food-box {
+    width: 100%;
+  }
   #right {
     right: 10px;
   }
