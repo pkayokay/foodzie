@@ -12,6 +12,10 @@
     padding: 18px 10px 18px;
   }
 
+  body {
+    background: #111;
+  }
+
 </style>
 <div class="jumbotron">  
   <h1>Hi,&nbspWelcome&nbspto&nbspthe Foodzie&nbspCommunity!<br> <span>Join a community of food lovers from across the world.</span><br><button id="button"><%= link_to 'Sign up', new_user_registration_path %></button></h1>
@@ -26,6 +30,8 @@
           <div class="color-box"></div>
           <div class="caption">
             <h1><%= place.name %> </h1>
+            <p><%= place.address %> </p>
+
           </div>
           <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
         </div>
@@ -36,5 +42,12 @@
 <div class="center"> 
 <%= will_paginate @posts %>
 </div>
+
+<script>
+$( document ).ready(function() {
+  $(".jumbotron h1" ).hide().fadeIn( "slow" );
+
+    });
+</script>
 
 

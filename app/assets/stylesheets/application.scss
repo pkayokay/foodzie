@@ -81,38 +81,6 @@ body {
   font-size: 1.2em;
 }
 
-footer {
-  width: 100%;
-  text-align: center;
-  color: #727272;
-}
-
-footer span {
-  color: #444;
-  font-weight: 500;
-}
-
-footer li a:focus {
-  color: #222;
-  text-decoration: none;
-  transition: all .1s ease;
-  font-weight: 100;
-  outline: 0;    
-}
-
-footer li a,footer  li a:visited {
-  color: #727272;
-  text-decoration: none;
-  transition: all .1s ease;
-  font-weight: 100;
-  padding: 0 22px;
-  outline: 0;    
-}
-
-footer li a:hover {
-  color: #333;
-}
-
 #map {
   width: 100%;
   max-width: 600px;
@@ -210,17 +178,15 @@ nav ul {
 
 .image-box {
   position: relative;
-  overflow: hidden;
   width: inherit;
 }
 
 
 .image-box:hover .color-box {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.image-box:hover .caption h1 {
-}
+
 
 .caption {
   width: 98%;
@@ -233,9 +199,14 @@ nav ul {
 }
 
 .caption h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.caption p {
+  font-size: 15px;
+  padding-top: 8px;
 }
 
 .color-box {
@@ -334,9 +305,6 @@ nav li a:hover  {
     transition: all .1s ease;
   }
 
-  footer li a {
-    padding: 0 10px;
-  }
 }
 
 @media (max-width:540px) {
@@ -381,9 +349,6 @@ nav li a:hover  {
     padding: 18px 8px 17px;
   }
 
-  footer li a {
-    font-size: .9em;
-  }
   li {
     margin-left: 0;
   }
