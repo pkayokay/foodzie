@@ -128,7 +128,7 @@ nav {
 .jumbotron {
   height: 500px;
   position: relative;
-  background: url(/assets/collage.jpg) no-repeat center center fixed; 
+  background: url(/assets/collage.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,7 +137,7 @@ nav {
 
 .jumbotron h1 {
     text-align: center;
-    top: 22%;
+    top: 23%;
     width: 90%;
     position: absolute;
     font-size: 60px;
@@ -148,7 +148,7 @@ nav {
 }
 
 .jumbotron h1 span {
-    font-size: .34em;
+    font-size: .35em;
     font-weight: 300;
 }
 
@@ -198,7 +198,7 @@ nav {
 
 .food-box {
   width: 100%;
-  margin: 0 0 -5px;
+  margin: 0 0 -6px;
 }
 
 ul {
@@ -328,14 +328,16 @@ nav li a:hover  {
   }
 }
 
-@media (max-width:370px) {
-  
-  #home {
-    display: none;
+@media (max-width:470px) {
+
+  .jumbotron h1 {
+    font-size: 32px;
+    top: 30%;
   }
-  nav {
-    padding-right: 0px;
+ .jumbotron h1 span {
+    font-size: .38em;
   }
+
 }
 
 
