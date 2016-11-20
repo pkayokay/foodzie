@@ -11,6 +11,7 @@
     z-index: 999;
     padding: 18px 10px 18px;
   }
+
 </style>
 <div class="jumbotron">  
   <h1>Hi,&nbspWelcome&nbspto&nbspthe Foodzie&nbspCommunity!<br> <span>Join a community of food lovers from across the world.</span><br><button id="button"><%= link_to 'Sign up', new_user_registration_path %></button></h1>
@@ -26,7 +27,7 @@
           <div class="caption">
             <h1><%= place.name %> </h1>
           </div>
-          <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
+          <%= image_tag place.defaultpicture, :size => "600x100%", :crop => :fill, class: 'img' %> <!--remove this and add above -->        
         </div>
       <% end %>
     </div>
