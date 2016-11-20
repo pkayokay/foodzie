@@ -10,12 +10,8 @@ Foodzie is web application built on Ruby on Rails. Reviewers can create, edit, a
 
 * Photo Upload with CarrierWave.
 
+* Friendly_id gem included.
+
 * Uses Twitter Bootstrap for CSS and components.
 
 * Uses Devise for user forms and security.
-
-
-![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/1.png)
-
-![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/2.png)
-![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/3.png)
