@@ -18,7 +18,7 @@
       
  
 </div>
-
+<div id="photos">
   <% @places.each do |place| %>
     <div class="food-box col-md-6">
       <%= link_to place_path(place) do %>        
@@ -27,11 +27,12 @@
           <div class="caption">
             <h1><%= place.name %> </h1>
           </div>
-          <%= image_tag place.defaultpicture, :size => "600x100%", :crop => :fill, class: 'img' %> <!--remove this and add above -->        
+          <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
         </div>
       <% end %>
     </div>
   <% end %>
+  </div>
 <div class="center"> 
 <%= will_paginate @posts %>
 </div>

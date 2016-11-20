@@ -46,8 +46,22 @@ img {
   width: 100%;
 }
 
-.img {
-  // box shadow?;
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
 }
 
 h1,h2,h3,h4 {
@@ -209,7 +223,7 @@ nav ul {
 }
 
 .caption {
-  width: 100%;
+  width: 98%;
   top: 50%;
   padding: 5px;
   transform: translateY(-50%);
@@ -235,8 +249,8 @@ nav ul {
 }
 
 .food-box {
-  width:100%;
-  margin: 0 0 -6px;
+  width: 100%;
+  margin: 0;
 }
 
 ul {
@@ -287,12 +301,17 @@ nav li a:hover  {
 
 @media (max-width:740px) {
 
-    .container {
+  .container {
     padding: 10px 15px;
   }
-
   body {
     font-size: 1em;
+  }
+
+  #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
   }
 
   span a {
