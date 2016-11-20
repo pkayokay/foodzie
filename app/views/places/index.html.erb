@@ -2,8 +2,20 @@
   .container {
     padding: 0;
   }
+  nav {
+    background: rgba(37, 37, 37, 0.65);
+    width: 100%;
+    top: 0;
+    opacity: .9;
+    position: fixed;
+    z-index: 999;
+    padding: 18px 10px 18px;
+  }
 </style>
-
+<div class="jumbotron">  
+  <h1>Hi,&nbspWelcome&nbspto&nbspthe Foodzie&nbspCommunity!<br> <span>Join a community of food lovers from across the world.</span></h1>
+ 
+</div>
 
   <% @places.each do |place| %>
     <div class="food-box col-md-6">
@@ -12,15 +24,15 @@
           <div class="color-box"></div>
           <div class="caption">
             <h1><%= place.name %> </h1>
+            <p><%= place.description %> </p>
           </div>
           <%= image_tag place.defaultpicture, class: 'img' %> <!--remove this and add above -->        
         </div>
       <% end %>
     </div>
   <% end %>
-  <br>
 <div class="center"> 
-  <%= will_paginate @posts %>
+<%= will_paginate @posts %>
 </div>
 
 

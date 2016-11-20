@@ -10,14 +10,14 @@
 </head>
 <body>
 <nav>
-<span id="brand"><%= link_to root_path do %><%= image_tag "logo.png" %><% end %></span>
+<!-- <span id="brand"><%= link_to root_path do %><%= image_tag "logo.png" %><% end %></span> -->
 
   <ul>
     <li id="home"><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'About', about_path %></li>
     <li><%= link_to 'Create', new_place_path %></li>
   </ul>
-  <ul id="right">
+  <ul>
     <% if user_signed_in? %>
       <li><%= link_to 'Account', user_path(current_user) %></li>
     <% end %>
@@ -25,13 +25,10 @@
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
     <% else %>
       <li><%= link_to 'Sign in', new_user_session_path %></li>
-      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+
     <% end %>
   </ul>
 </nav>
-<!-- <div class=jumbotron>
-  <h1>Foodzie</h1>
-</div> -->
 <div class="container">
   <!--<% if notice.present? %>
     <p class="notice"><%= notice %></p>
@@ -42,20 +39,7 @@
   <%= yield %>
 </div>
 <footer>
-  <ul>
-    <li><a href="mailto:pkayokay@gmail.com">Email</a></li>
-    <li><a href="https://github.com/pkayokay/foodzie" target="_blank">Github</a></li>
-    <% if user_signed_in? %>
-      <li><%= link_to 'Account', user_path(current_user) %></li>
-    <% end %>
-    <% if user_signed_in? %>
-      <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
-    <% else %>
-      <li><%= link_to 'Sign in', new_user_session_path %></li>
-      <li><%= link_to 'Sign up', new_user_registration_path %></li>
-    <% end %>
-  </ul>
-  <ul style="display:block">
+  <ul style="display:inline;padding-bottom: 20px;">
     <li style="font-weight:100;font-size: .7em">Created by <span>pkayokay</span></li>
   </ul>
 
