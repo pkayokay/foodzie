@@ -1,8 +1,14 @@
 <style>
 .left a, .left a:visited, .left a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+}
+.container {
+  padding-bottom: 30px;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
 </style>
   <div class="left">
     <h1>Account </h1>
@@ -13,7 +19,7 @@
     <h4><%= @user.comments.count %> total places</h4>
     <h4><%= @user.comments.where(rating: '5').count %> total 5 star reviews</h4>
 
-    <br>
+    <hr>
 
   <h1 class="text-center">My Places</h1>
   <% if @user.places.present? %>
@@ -26,7 +32,7 @@
     <p>No places</p>
   <% end %>
 
-  <br>
+  <hr>
 
   <h1 class="text-center">My Comments</h1>
     <% if @user.comments.present? %>
