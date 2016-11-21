@@ -33,7 +33,7 @@
       <% @user.comments.each do |comment| %>
         <div style="margin-bottom: 20px; font-weight: 300;">
             <% if comment.humanized_rating.present? %>
-              <b style="color: #ee2e24; font-weight: 400"><%= comment.humanized_rating %></b> -
+              <b style="color: #f1b711; font-weight: 400"><%= comment.humanized_rating %></b> -
             <% end %>
             <%= comment.message %>
         </div>
