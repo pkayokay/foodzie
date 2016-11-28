@@ -2,28 +2,15 @@
   .container {
     padding: 0;
   }
-  nav {
-    background: rgba(37, 37, 37, 0.65);
-    width: 100%;
-    top: 0;
-    opacity: .9;
-    position: fixed;
-    z-index: 999;
-    padding: 18px 10px 18px;
-  }
-
-  body {
-    background: #111;
-  }
 
 </style>
-<div class="jumbotron">  
+<!-- <div class="jumbotron">  
   <h1>Hi,&nbspWelcome&nbspto&nbspthe Foodzie&nbspCommunity!<br> <span>Find honest reviews on local restaurants and cafes.<br>
     <% if !user_signed_in? %>
-  <button id="button"><%= link_to 'Sign up', new_user_registration_path %></button></h1>
+  <button id="button"><%= link_to 'Sign up', new_user_registration_path %></button>
       <% end %>
  
-</div>
+</div> -->
 <div id="photos">
   <% @places.each do |place| %>
     <div class="food-box col-md-6">

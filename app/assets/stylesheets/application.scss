@@ -24,7 +24,6 @@ abbr[title] {
 }
 
 .pagination {
-  background: #111;
   font-weight: 300;
   clear: both;
   padding: 20px;
@@ -32,15 +31,9 @@ abbr[title] {
   font-variant: small-caps;
 }
 
-.pagination span {
-  color: #fff;
-}
 
-.pagination em.current {
-  color: #f1b711;
-}
 .pagination a, .pagination a:focus, .pagination a:visited {
-  color: #fff;
+  color: #333;
 }
 img {
   width: 100%;
@@ -150,11 +143,10 @@ nav ul {
 
 #button {
   margin: 0 auto;
-  padding: 13px;
+  padding: 10px 0px;
   background: #f1b711;
   outline: 0;
   border-radius: 4px;
-  margin-top: 12px;
   font-size: 18px;
   border: 0;
 }
@@ -322,11 +314,6 @@ nav li a:hover  {
 
   #brand img {
     width: 32px;
-  }
-
-  #button {
-    padding: 9px;
-    font-size: 15px;
   }
 
   .caption h1 {
