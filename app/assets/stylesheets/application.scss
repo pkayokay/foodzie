@@ -144,7 +144,6 @@ nav ul {
 #button {
   margin: 0 auto;
   outline: 0;
-  font-size: 18px;
 }
 
 #button a {
@@ -157,7 +156,7 @@ nav ul {
 }
 
 #button:hover a {
-  background: #d09f12;
+  background: #efb81a;
 }
 
 .container {
@@ -323,7 +322,7 @@ nav li a:hover  {
     height: 250px;
   }
 
-  nav li a, nav li a:hover, nav li a:focus, nav li a:visited {
+  nav li a, nav li a:hover, nav li a:focus, nav li a:visited{
     font-size: .85em;
     padding: 18px 8px 17px;
   }
