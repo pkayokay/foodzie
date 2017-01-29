@@ -449,6 +449,14 @@ abbr[title] {
     display: none;
 }
 
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+    width: 20px;
+}
+
 input[type="submit" i],
 input[type="submit" i]:visited,
 input[type="submit" i]:focus,
