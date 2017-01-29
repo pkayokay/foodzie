@@ -14,9 +14,11 @@ Foodzie is web application built on Ruby on Rails. It provides a list of restaur
 
 * Email notifications with ActionMailer.
 
+* Devise for user forms and security.
+
 * Twitter Bootstrap for CSS and components.
 
-* Devise for user forms and security.
+* Google Maps API.
 
 #### Preview
 
