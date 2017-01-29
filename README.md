@@ -17,3 +17,5 @@ Foodzie is web application built on Ruby on Rails. It provides a list of restaur
 * Twitter Bootstrap for CSS and components.
 
 * Devise for user forms and security.
+
+![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/foodzie.png)
