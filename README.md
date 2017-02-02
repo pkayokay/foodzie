@@ -2,7 +2,7 @@
 
 #### Ruby on Rails Web Application
 
-Foodzie is web application built on Ruby on Rails. It provides a list of restaurants(with reviews and comments) that will help people find the right place to eat! Check it out [here](https://foodzie.herokuapp.com/).
+Foodzie provides a list of restaurants(with reviews and comments) that will help people find the right place to eat! Check it out [here](https://foodzie.herokuapp.com/).
 
 ### Features: 
 
