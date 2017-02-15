@@ -22,4 +22,4 @@ Foodzie provides a list of restaurants(with reviews and comments) that will help
 
 #### Preview
 
-![alt tag](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/foodzie.png)
+![Foodzie Project](https://github.com/pkayokay/Foodzie/blob/master/app/assets/images/foodzie.png)
