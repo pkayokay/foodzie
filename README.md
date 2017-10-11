@@ -1,6 +1,6 @@
 # Foodzie
 
-Foodzie is a Ruby on Rails application. It provides a list of restaurants(with reviews and comments) that will help people find the right place to eat! Check it out [here](https://pkayokay.github.io/foodzie).
+Foodzie is a Ruby on Rails application. It provides a list of restaurants(with reviews and comments) that will help people find the right place to eat!
 
 ### Features: 
 
